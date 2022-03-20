@@ -6,7 +6,8 @@ public class Student implements HasID<String> {
     private String idStudent;
     private String nume;
     private int grupa;
-    private String email;
+    private String email = "";
+    private String teacher = "";
 
     /**
      * Class Constructor
@@ -20,6 +21,14 @@ public class Student implements HasID<String> {
         this.nume = nume;
         this.grupa = grupa;
         this.email = email;
+    }
+
+    public Student(String idStudent, String nume, int grupa, String email, String teacher) {
+        this.idStudent = idStudent;
+        this.nume = nume;
+        this.grupa = grupa;
+        this.email = email;
+        this.teacher = teacher;
     }
 
     /**
